@@ -114,7 +114,7 @@ export default {
       }
 
       return (
-        <Item {...{ menu.path }}>
+        <Item {...{ key: menu.path }}>
           <tag {...{ props, attrs }}>
             {this.renderIcon(menu.meta.icon)}
             <span>{menu.meta.title}</span>
@@ -128,7 +128,7 @@ export default {
         menu.children.forEach(item => itemArr.push(this.renderItem(item)))
       }
       return (
-        <SubMenu {...{ menu.path }}>
+        <SubMenu {...{ key: menu.path }}>
           <span slot="title">
             {this.renderIcon(menu.meta.icon)}
             <span>{menu.meta.title}</span>

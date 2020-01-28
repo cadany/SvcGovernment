@@ -11,6 +11,21 @@ export const asyncRouterMap = [
     meta: { title: '首页' },
     redirect: '/dashboard/workplace',
     children: [
+      // service government
+      {
+        path: '/service',
+        name: 'services',
+        component: RouteView,
+        meta: { title: '服务治理', keepAlive: true, icon: bxAnaalyse, permission: [ 'dashboard' ] },
+        children: [
+          {
+            path: '/services/list',
+            name: 'service-list',
+            component: () => import('@/views/government/svcList'),
+            meta: { title: '服务列表', keepAlive: false, permission: [ 'dashboard' ] }
+          }
+        ]
+      },
       // dashboard
       {
         path: '/dashboard',
@@ -24,6 +39,12 @@ export const asyncRouterMap = [
             name: 'Analysis',
             component: () => import('@/views/dashboard/Analysis'),
             meta: { title: '分析页', keepAlive: false, permission: [ 'dashboard' ] }
+          },
+          // 外部链接
+          {
+            path: 'https://www.baidu.com/',
+            name: 'Monitor',
+            meta: { title: '监控页（外部）', target: '_blank' }
           },
           {
             path: '/dashboard/workplace',
@@ -39,22 +60,7 @@ export const asyncRouterMap = [
           }
         ]
       },
-      // dashboard
-      {
-        path: '/svcgov',
-        name: 'svcgov',
-        redirect: '/dashboard/workplace',
-        component: RouteView,
-        meta: { title: '服务治理', keepAlive: true, icon: bxAnaalyse, permission: ['dashboard'] },
-        children: [
-          {
-            path: '/services/list',
-            name: 'svcinstances',
-            component: () => import('@/views/government/svcList'),
-            meta: { title: '服务实例', keepAlive: true, permission: [ 'dashboard' ] }
-          }
-        ]
-      },
+
       // forms
       {
         path: '/form',

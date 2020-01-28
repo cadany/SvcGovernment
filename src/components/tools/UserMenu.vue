@@ -31,7 +31,7 @@
           </a-menu-item>
           <a-menu-divider/>
           <a-menu-item key="3">
-            <a href="javascript:" @click="handleLogout">
+            <a href="javascript:;" @click="handleLogout">
               <a-icon type="logout"/>
               <span>退出登录</span>
             </a>

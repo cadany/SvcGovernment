@@ -221,8 +221,8 @@ Table 重封装组件说明
 `alert` 属性对象：
 
 ```javascript
-{
-  Boolean, 
+alert: {
+  show: Boolean, 
   clear: [Function, Boolean]
 }
 ```

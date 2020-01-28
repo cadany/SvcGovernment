@@ -26,7 +26,7 @@ const Item = {
   },
   render () {
     return (
-      <Col {...{ responsive[this.col] }}>
+      <Col {...{ props: responsive[this.col] }}>
         <div class="term">{this.$props.term}</div>
         <div class="content">{this.$slots.default}</div>
       </Col>

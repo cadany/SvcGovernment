@@ -109,10 +109,10 @@
               </a>
               <a-menu slot="overlay">
                 <a-menu-item>
-                  <a href="javascript:">操作一</a>
+                  <a href="javascript:;">操作一</a>
                 </a-menu-item>
                 <a-menu-item>
-                  <a href="javascript:">操作二</a>
+                  <a href="javascript:;">操作二</a>
                 </a-menu-item>
               </a-menu>
             </a-dropdown>
@@ -172,10 +172,10 @@
                   <a-icon type="ellipsis" class="ant-dropdown-link" />
                   <a-menu slot="overlay">
                     <a-menu-item>
-                      <a href="javascript:">操作一</a>
+                      <a href="javascript:;">操作一</a>
                     </a-menu-item>
                     <a-menu-item>
-                      <a href="javascript:">操作二</a>
+                      <a href="javascript:;">操作二</a>
                     </a-menu-item>
                   </a-menu>
                 </a-dropdown>

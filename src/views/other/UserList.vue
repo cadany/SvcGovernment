@@ -59,13 +59,13 @@
           </a>
           <a-menu slot="overlay">
             <a-menu-item>
-              <a href="javascript:">详情</a>
+              <a href="javascript:;">详情</a>
             </a-menu-item>
             <a-menu-item>
-              <a href="javascript:">禁用</a>
+              <a href="javascript:;">禁用</a>
             </a-menu-item>
             <a-menu-item>
-              <a href="javascript:">删除</a>
+              <a href="javascript:;">删除</a>
             </a-menu-item>
           </a-menu>
         </a-dropdown>
